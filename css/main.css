@@ -36,6 +36,12 @@ a{
 .topNavBar-inner{
 	padding: 0 16px;
 }
+.topNavBar-inner>nav{
+	float: right;
+}
+.logo{
+	float: left;
+}
 .topNavBar nav {
 	
 }
@@ -63,13 +69,11 @@ a{
 	padding-top: 4px;
 	padding-bottom: 4px;
 }
-.topNavBar .logo .rs{
+.topNavBar .logo .hztian{
 	margin-right: 4px;
 	color: #E6686A;
 }
-.topNavBar .logo .ca{
-	color: #9A9DA2;
-}
+
 
 .banner{
 	background-image: url(../img/banner.png);
@@ -81,6 +85,13 @@ a{
 	height: 515px;
 	background-color: rgba(0,0,0,0.5);
 }
+main{
+	margin-top: -330px;
+	-ms-margin-top: -330px;
+	-moz-margin-top: -330px;
+	-o-margin-top: -330px;
+	-webkit-margin-top: -330px;
+}
 .card{
 	width: 940px;
 	margin: 0 auto;
@@ -89,6 +100,8 @@ a{
 	position: relative;
 	-webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+	-ms-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+	-o-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
 	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
 }
 .card .welcome{
@@ -112,6 +125,10 @@ a{
 }
 .card .picture{
 	float: left;
+}
+.picture img{
+	width:299px; 
+	height:347px;
 }
 .card .text{
 	float: left;
@@ -168,7 +185,7 @@ a{
 .card .media a:hover{
 	background-color: #CF5D5F;
 }
-body > main .download-button{
+body  main .download-button{
 	font-size: 14px;
 	line-height: 16px;
 	padding: 21px 55px;
@@ -180,10 +197,10 @@ body > main .download-button{
 	font-weight: bold;
 	margin: 32px 0;
 }
-body > main .download-button-a{
+body  main .download-button-a{
 	text-align: center;
 }
-body > main .download-button:hover{
+body  main .download-button:hover{
 	-webkit-box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.5);
     box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.5);
@@ -296,4 +313,12 @@ section.portfolio .worksshow{
 	-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
 	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
 	border-radius: 2px;
+}
+
+/* ----------------------------------------------------------------------- */
+.ui-loader-default h1{
+	display: none;
+}
+.woshi{
+	display: none;
 }

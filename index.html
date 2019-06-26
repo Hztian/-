@@ -2,12 +2,25 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>我的网页</title>
-		<link rel="stylesheet" href="css/main.css" />
 		<script src="//at.alicdn.com/t/font_1211165_64s7t44ho13.js"></script>
+		<script src="//at.alicdn.com/t/font_1259631_ugqvuh3hmlc.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" media="screen and (max-device-width:980px)"/>
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<link rel="stylesheet" href="css/main.css" media="screen and (min-device-width:981px)"/>
+        <link rel="stylesheet" href="css/main-mobile.css" media="screen and (max-device-width:980px)" />
+		
 		<style type="text/css">
     .icon {
        width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }
+     .icon2 {
+       width: 3em; height: 3em;
        vertical-align: -0.15em;
        fill: currentColor;
        overflow: hidden;
@@ -16,17 +29,26 @@
 		
 	</head>
 	<body>
-		<div class="topNavBar">
-			<div class="topNavBar-inner clearfix">
-				<a href="#" class="logo" alt="logo" style="float: left;"> 
-					<span class="rs">RS</span>
-					<span class="ca">Card</span>
+		<div data-role="page" id="page1">
+			<div class="navbutton" id="navbutton">
+				<a href="#navpanel">
+					<svg class="icon2" aria-hidden="true">
+                       <use xlink:href="#icon-changjingdakai" id="chang_icon"></use>
+                  </svg>
 				</a>
-				<nav style="float: right;">
+			</div>
+			
+		<div class="topNavBar" data-role = "panel" id="navpanel" data-dismissible="false" data-swipe-close="false" data-display="overlay" data-position-fixed="true">
+			
+			<div class="topNavBar-inner clearfix">
+				<a href="#" class="logo" alt="logo"> 
+					<span class="hztian">Hztian</span>
+				</a>
+				<nav>
 					<ul class="clearfix">
-						<li><a href="#">关于</a></li>
-						<li><a href="#">技能</a></li>
-						<li><a href="#">作品</a></li>
+						<li><a href="#guanyu" target="_parent">关于</a></li>
+						<li><a href="#skills" target="_parent">技能</a></li>
+						<li><a href="#portfolio" target="_parent">作品</a></li>
 						<li><a href="#">博客</a></li>
 						<li><a href="#">联系方式</a></li>
 						<li><a href="#">相册</a></li>
@@ -35,22 +57,24 @@
 				</nav>
 			</div>
 			</div>
-			<div class="banner">
-				<div class="banner-lucency"></div>
+			<div data-role="main">
+			<div class="banner" id="guanyu">
+				<div class="banner-lucency">
+				</div>
 			</div>
-		<main style="margin-top: -330px;">
+		<main>
 			<div class="card">
 				
-			<div class="pictureandtext clearfix">
+			<div class="pictureandtext clearfix" id="pictureandtext">
 				
 			<div class="picture">
-				<img src="img/touxiang.jpg" width="299px" height="347px" alt="头像" />
+				<img src="img/touxiang.jpg" alt="头像" />
 			</div>
 			<div class="text">
 				<span class="welcome">你好！
 				<span class="triangle"></span>
 				</span>
-				<h1>黄镇添</h1>
+				<h1><span class="woshi">我是</span>黄镇添</h1>
 				<p>求职意向前端开发工程师</p>
 				<hr />
 				<div class="me">
@@ -67,8 +91,8 @@
 				</div>
 				</div>
 				</div>
-				<footer class="media">
-					<a href="#">
+				<footer class="media" data-role="none">
+					<a href="#" data-role="none">
 					<svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-weixin"></use>
                     </svg>
@@ -98,7 +122,7 @@
 		 <p class="zwjs">你好，我是黄镇添，专业是移动应用开发。熟悉HTML+CSS3+JavaScript、<br/>框架、node.js,了解Java/C编程语言、Mysql数据库。
 		</p>
 		</main>
-		<section class="skills">
+		<section class="skills" id="skills">
 			<h2>技能</h2>
 			<ol class="clearfix">
 			<li><h3>
@@ -120,7 +144,7 @@
 			<div class="bar-a"><div class="bar-b" style="width: 50%;"></div></div></li>
 			</ol>
 		</section>
-		<section class="portfolio">
+		<section class="portfolio" id="portfolio">
 			<h2>我的作品</h2>
 			<nav>
 				<ol class="clearfix">
@@ -155,5 +179,8 @@
 				</div>
 			</div>
 		</section>
+		</div>
+		</div>
+		<script type="text/javascript" src="js/js-mobile.js" ></script>
 	</body>
 </html>
