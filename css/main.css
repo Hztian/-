@@ -76,13 +76,13 @@ a{
 
 
 .banner{
-	background-image: url(../img/banner.png);
+	background: url(../img/banner1.jpg) no-repeat;
 	background-position: center center;
 	background-size: cover;
-	height: 515px;
+	height: 700px;
 }
 .banner .banner-lucency{
-	height: 515px;
+	height: 700px;
 	background-color: rgba(0,0,0,0.5);
 }
 main{
@@ -209,7 +209,7 @@ body  main .download-button:hover{
 .zwjs{
 	width: 940px;
 	margin: 0 auto;
-	text-align: center;
+	text-align: left;
 	font-family: kaiti;
 	font-size: 18px;
 	line-height: 1.8;
@@ -249,6 +249,7 @@ section.skills .bar-a{
 	height: 6px;
 	background-color: #FAE1E1;
 	border-radius: 2px;
+	margin-top: 2px;
 }
 section.skills .bar-b{
 	height: 100%;
@@ -308,11 +309,52 @@ section.portfolio > nav .menubar-3{
 	transition: all 0.6s; 
 }
 section.portfolio .worksshow{
-	margin-top: 30px;
+	margin-top: 2rem;
 	-webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
 	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
-	border-radius: 2px;
+	border-radius: 1rem;
+	width: 100%;
+	padding: 0;
+	height: 30rem;
+	position: relative;
+}
+section.portfolio .worksshow img{
+	width: 100%;
+	height: 30rem;
+	border-radius: 1rem;
+}
+.jieshao{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(255,255,255,0.5);
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	transition: all 1s;
+}
+.jieshao h3{
+	color: #CF5D5F;
+}
+.jieshao p{
+	color: black;
+	font-size: 100;
+	line-height: 2rem;
+}
+.jieshao svg{
+	vertical-align: middle;
+	position:absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+margin:auto;
+}
+
+.jieshao:hover .icon3{
+	transform: scale(3);
+	transition: all 1s;
 }
 
 /* ----------------------------------------------------------------------- */
