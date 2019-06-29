@@ -3,282 +3,293 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<title>个人网站</title>
+		<title>Hztian</title>
 		<script src="//at.alicdn.com/t/font_1211165_64s7t44ho13.js"></script>
 		<script src="//at.alicdn.com/t/font_1259631_i7teln87tla.js"></script>
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" media="screen and (max-device-width:980px)"/>
-        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-		<link rel="stylesheet" href="css/main.css" media="screen and (min-device-width:981px)"/>
-        <link rel="stylesheet" href="css/main-mobile.css" media="screen and (max-device-width:980px)" />
-		
-		<style type="text/css">
-    .icon {
-       width: 1em; height: 1em;
-       vertical-align: -0.15em;
-       fill: currentColor;
-       overflow: hidden;
-    }
-     .icon2 {
-       width: 3em; height: 3em;
-       vertical-align: -0.15em;
-       fill: currentColor;
-       overflow: hidden;
-    }
-    .icon3 {
-       width: 4em; height: 4em;
-       vertical-align: -0.15em;
-       fill: currentColor;
-       overflow: hidden;
-       color: red;
-    }
-	.footer{
-		width: 100%;
-		height: 50px;
-		line-height: 50px;
-		font-size: 18px;
-		color: #9DA0A7;
-		background-color: white;
-		margin-top: 30px;
-		text-align: center;
-	}
-       </style>
-		
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" media="screen and (max-device-width:980px)" />
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<link rel="stylesheet" href="css/main.css" media="screen and (min-device-width:981px)" />
+		<link rel="stylesheet" href="css/main-mobile.css" media="screen and (max-device-width:980px)" />
+		<link rel="stylesheet" type="text/css" href="css/ty.css" />
 	</head>
 	<body>
 		<div data-role="page" id="page1">
 			<div class="navbutton" id="navbutton">
 				<a href="#navpanel">
 					<svg class="icon2" aria-hidden="true">
-                       <use xlink:href="#icon-changjingdakai" id="chang_icon"></use>
-                  </svg>
+						<use xlink:href="#icon-changjingdakai" id="chang_icon"></use>
+					</svg>
 				</a>
 			</div>
-			
-		<div class="topNavBar" data-role = "panel" id="navpanel" data-dismissible="false" data-swipe-close="false" data-display="overlay" data-position-fixed="true">
-			
-			<div class="topNavBar-inner clearfix">
-				<a href="#" class="logo" alt="logo"> 
-					<span class="hztian">Hztian</span>
-				</a>
-				<nav>
-					<ul class="clearfix">
-						<li><a href="#guanyu" target="_parent">关于</a></li>
-						<li><a href="#skills" target="_parent">技能</a></li>
-						<li><a href="#portfolio" target="_parent">作品</a></li>
-						<li><a href="https://hztian.github.io">博客</a></li>
-						<li><a href="#">相册</a></li>
-						<li><a href="#">其他</a></li>
-						
-					</ul>
-				</nav>
+
+			<div class="topNavBar" data-role="panel" id="navpanel" data-dismissible="false" data-swipe-close="false"
+			 data-display="overlay" data-position-fixed="true">
+
+				<div class="topNavBar-inner clearfix">
+					<a href="#" class="logo" alt="logo">
+						<span class="hztian">Hztian</span>
+					</a>
+					<nav>
+						<ul class="clearfix">
+							<li><a href="#guanyu" target="_parent">关于</a></li>
+							<li><a href="#skills" target="_parent" id="skills_btn">技能</a></li>
+							<li><a href="#portfolio" target="_parent">作品</a></li>
+							<li><a href="https://hztian.github.io">博客</a></li>
+							<li id="xc"><a href="#">相册</a></li>
+							<li id="qt"><a href="#">其他</a></li>
+
+						</ul>
+					</nav>
+				</div>
 			</div>
-			</div>
+			<script type="text/javascript">
+				var xc = document.getElementById('xc');
+				var qt = document.getElementById('qt');
+				xc.onclick = function() {
+					window.location.href = "xc.html";
+				}
+				qt.onclick = function() {
+					window.location.href = "xc.html";
+				}
+			</script>
 			<div data-role="main">
-			<div class="banner" id="guanyu">
-				<div class="banner-lucency">
+				<div class="banner" id="guanyu">
+					<div class="banner-lucency">
+					</div>
 				</div>
+				<main>
+					<div class="card">
+
+						<div class="pictureandtext clearfix" id="pictureandtext">
+
+							<div class="picture">
+								<img src="img/touxiang.jpg" alt="头像" />
+							</div>
+							<div class="text">
+								<span class="welcome">你好！
+									<span class="triangle"></span>
+								</span>
+								<h1><span class="woshi">我是</span>黄镇添</h1>
+								<p>求职意向前端开发工程师</p>
+								<hr />
+								<div class="me">
+									<dl>
+										<dt>年龄</dt>
+										<dd>20</dd>
+										<dt>所在城市</dt>
+										<dd>广州</dd>
+										<dt>邮箱</dt>
+										<dd>1409278235@qq.com</dd>
+										<dt>电话</dt>
+										<dd>13249716370</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<footer class="media" data-role="none">
+							<a href="#" data-role="none">
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-weixin"></use>
+								</svg>
+							</a>
+							<a href="#">
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-weibo"></use>
+								</svg>
+							</a>
+							<a href="https://wpa.qq.com/msgrd?v=3&uin=1409278235&site=qq&menu=yes">
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-qq-copy-copy"></use>
+								</svg>
+							</a>
+							<a href="#">
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-github"></use>
+								</svg>
+							</a>
+						</footer>
+
+					</div>
+
+					<p class="download-button-a">
+						<a class="download-button" href="./pdf/移动3班-黄镇添简历.pdf" target="_blank" download="">下载 PDF 简历</a>
+					</p>
+					<p class="zwjs">你好，我是黄镇添，专业是移动应用开发。熟悉HTML+CSS3+JavaScript、jquery mobile框架、node.js,了解vue.js框架、Java/C编程语言、Mysql数据库。
+					</p>
+				</main>
+				<section class="skills" id="skills">
+					<h2>技能</h2>
+					<ol class="clearfix">
+						<li id="dh1">
+							<h3>
+								HTML 5 &amp; CSS 3
+							</h3>
+							<div class="bar-a">
+								<div class="bar-b" style="width: 80%;"></div>
+							</div>
+						</li>
+						<li id="dh2">
+							<h3>
+								JavaScript
+							</h3>
+							<div class="bar-a">
+								<div class="bar-b" style="width: 30%;"></div>
+							</div>
+						</li>
+						<li id="dh3">
+							<h3>
+								Vue
+							</h3>
+							<div class="bar-a">
+								<div class="bar-b" style="width: 10%;"></div>
+							</div>
+						</li>
+						<li id="dh4">
+							<h3>
+								node.js
+							</h3>
+							<div class="bar-a">
+								<div class="bar-b" style="width: 50%;"></div>
+							</div>
+						</li>
+						<li id="dh5">
+							<h3>
+								jquery mobile
+							</h3>
+							<div class="bar-a">
+								<div class="bar-b" style="width: 80%;"></div>
+							</div>
+						</li>
+						<li id="dh6">
+							<h3>
+								jquery
+							</h3>
+							<div class="bar-a">
+								<div class="bar-b" style="width: 50%;"></div>
+							</div>
+						</li>
+					</ol>
+				</section>
+				<script type="text/javascript">
+					$(document).ready(function() {
+						$("#dh1").fadeIn();
+						$("#dh2").fadeIn("slow");
+						$("#dh3").fadeIn(2000);
+						$("#dh4").fadeIn(3000);
+						$("#dh5").fadeIn(4000);
+						$("#dh6").fadeIn(5000);
+					});
+				</script>
+				<section class="portfolio" id="portfolio">
+					<h2>我的作品</h2>
+					<nav class="portfolio-nav">
+						<ol class="clearfix">
+							<li id="portfoliobar1">所有</li>
+							<li id="portfoliobar2">原生</li>
+							<li id="portfoliobar3">框架</li>
+						</ol>
+						<div class="menubar">
+							<div id="portfoliobar" class="menubar-1"></div>
+						</div>
+					</nav>
+
+					<div>
+						<div class="worksshow portfolio-one" id="zp1">
+							<a target="_blank" href="http://keynav.hztian.me">
+								<img src="img/keynav.PNG" alt="作品1" />
+								<div class="jieshao">
+									<svg class="icon3" aria-hidden="true">
+										<use xlink:href="#icon-yulan" id="chang_icon"></use>
+									</svg>
+									<div class="jieshao_bottom">
+										<h3>键盘导航</h3>
+										<p>使用了html+css+javascript，一个多功能导航键盘。</p>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="worksshow portfolio-two" id="zp2">
+							<a target="_blank" href="http://sc.hztian.me">
+								<img src="img/sc.PNG" alt="作品2" />
+								<div class="jieshao">
+									<svg class="icon3" aria-hidden="true">
+										<use xlink:href="#icon-yulan" id="chang_icon"></use>
+									</svg>
+									<div class="jieshao_bottom">
+										<h3>商城PC端</h3>
+										<p>使用了html+css+javascript+jquery，网上商城pc端。</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="worksshow portfolio-three" id="zp3">
+							<a target="_blank" href="http://scmobile.hztian.me">
+								<img src="img/scmobile.PNG" alt="作品3" />
+								<div class="jieshao">
+									<svg class="icon3" aria-hidden="true">
+										<use xlink:href="#icon-yulan" id="chang_icon"></use>
+									</svg>
+									<div class="jieshao_bottom">
+										<h3>商城移动端</h3>
+										<p>使用了html+css+javascript+jquery+jquery mobile,网上商城移动端。</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div target="_blank" class="worksshow portfolio-four" id="zp4">
+							<a href="http://canvas.hztian.me">
+								<img src="img/canvas.PNG" alt="作品4" />
+								<div class="jieshao">
+									<svg class="icon3" aria-hidden="true">
+										<use xlink:href="#icon-yulan" id="chang_icon"></use>
+									</svg>
+									<div class="jieshao_bottom">
+										<h3>简易的画板</h3>
+										<p>使用html+css+javascript的一个简易的画板。</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</section>
 			</div>
-		<main>
-			<div class="card">
-				
-			<div class="pictureandtext clearfix" id="pictureandtext">
-				
-			<div class="picture">
-				<img src="img/touxiang.jpg" alt="头像" />
-			</div>
-			<div class="text">
-				<span class="welcome">你好！
-				<span class="triangle"></span>
-				</span>
-				<h1><span class="woshi">我是</span>黄镇添</h1>
-				<p>求职意向前端开发工程师</p>
-				<hr />
-				<div class="me">
-				<dl>
-					<dt>年龄</dt>
-					<dd>20</dd>
-					<dt>所在城市</dt>
-					<dd>广州</dd>
-					<dt>邮箱</dt>
-					<dd>1409278235@qq.com</dd>
-					<dt>电话</dt>
-					<dd>13202035203</dd>
-				</dl>
-				</div>
-				</div>
-				</div>
-				<footer class="media" data-role="none">
-					<a href="#" data-role="none">
-					<svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-weixin"></use>
-                    </svg>
-					</a>
-					<a href="#">
-						<svg class="icon" aria-hidden="true">
-						<use xlink:href="#icon-weibo"></use>
-						</svg>
-					</a>
-					<a href="#">
-						<svg class="icon" aria-hidden="true">
-						<use xlink:href="#icon-qq-copy-copy"></use>
-						</svg>
-					</a>
-					<a href="#">
-						<svg class="icon" aria-hidden="true">
-						<use xlink:href="#icon-github"></use>
-						</svg>
-					</a>
+			<footer class="footer">
+				<p>Copyright&copy;2019&nbsp;&nbsp;&nbsp;&nbsp;ByHztian</p>
 			</footer>
-					
 		</div>
-		
-		<p class="download-button-a">
-			<a class="download-button" href="./pdf/移动3班-黄镇添简历.pdf" target="_blank" download="">下载 PDF 简历</a>
-		</p>
-		 <p class="zwjs">你好，我是黄镇添，专业是移动应用开发。熟悉HTML+CSS3+JavaScript、jquery mobile框架、node.js,了解vue.js框架、Java/C编程语言、Mysql数据库。
-		</p>
-		</main>
-		<section class="skills" id="skills">
-			<h2>技能</h2>
-			<ol class="clearfix">
-			<li><h3>
-				HTML 5 &amp; CSS 3
-				</h3>
-				<div class="bar-a"><div class="bar-b" style="width: 80%;"></div></div>
-			</li>
-			<li><h3>
-			JavaScript
-			</h3>
-			<div class="bar-a"><div class="bar-b" style="width: 30%;"></div></div></li>
-			<li><h3>
-			Vue
-			</h3>
-			<div class="bar-a"><div class="bar-b" style="width: 10%;"></div></div></li>
-			<li><h3>
-			node.js
-			</h3>
-			<div class="bar-a"><div class="bar-b" style="width: 50%;"></div></div></li>
-			<li><h3>
-			jquery mobile
-			</h3>
-			<div class="bar-a"><div class="bar-b" style="width: 80%;"></div></div></li>
-			<li><h3>
-			jquery
-			</h3>
-			<div class="bar-a"><div class="bar-b" style="width: 50%;"></div></div></li>
-			</ol>
-		</section>
-		<section class="portfolio" id="portfolio">
-			<h2>我的作品</h2>
-			<nav class="portfolio-nav">
-				<ol class="clearfix">
-				<li id="portfoliobar1">所有</li>
-				<li id="portfoliobar2">原生</li>
-				<li id="portfoliobar3">框架</li>
-				</ol>
-				<div class="menubar">
-					<div id="portfoliobar" class="menubar-1"></div>
-				</div>
-			</nav>
-			
-			<div>
-				<div class="worksshow portfolio-one" id="zp1">
-					<a href="http://keynav.hztian.me">
-					<img src="img/keynav.PNG" alt="作品1"/>
-					<div class="jieshao">
-						<svg class="icon3" aria-hidden="true">
-                       <use xlink:href="#icon-yulan" id="chang_icon"></use>
-                        </svg>
-						<div class="jieshao_bottom">
-							<h3>键盘导航</h3>
-							<p>使用了html+css+javascript，一个多功能导航键盘。</p>
-						</div>
-					</div>
-					</a>
-				</div>
-				
-				<div class="worksshow portfolio-two" id="zp2">
-					<a href="http://sc.hztian.me">
-					<img src="img/sc.PNG" alt="作品2"/>
-					<div class="jieshao">
-						<svg class="icon3" aria-hidden="true">
-					   <use xlink:href="#icon-yulan" id="chang_icon"></use>
-					    </svg>
-						<div class="jieshao_bottom">
-							<h3>商城PC端</h3>
-							<p>使用了html+css+javascript+jquery，网上商城pc端。</p>
-						</div>
-					</div>
-					</a>
-				</div>
-				<div class="worksshow portfolio-three" id="zp3">
-					<a href="http://scmobile.hztian.me">
-					<img src="img/scmobile.PNG" alt="作品3"/>
-					<div class="jieshao">
-						<svg class="icon3" aria-hidden="true">
-					   <use xlink:href="#icon-yulan" id="chang_icon"></use>
-					    </svg>
-						<div class="jieshao_bottom">
-							<h3>商城移动端</h3>
-							<p>使用了html+css+javascript+jquery+jquery mobile,网上商城移动端。</p>
-						</div>
-					</div>
-					</a>
-				</div>
-				<div class="worksshow portfolio-four" id="zp4">
-					<a href="http://canvas.hztian.me">
-					<img src="img/canvas.PNG" alt="作品4"/>
-					<div class="jieshao">
-						<svg class="icon3" aria-hidden="true">
-					   <use xlink:href="#icon-yulan" id="chang_icon"></use>
-					    </svg>
-						<div class="jieshao_bottom">
-							<h3>简易的画板</h3>
-							<p>使用html+css+javascript的一个简易的画板。</p>
-						</div>
-					</div>
-					</a>
-				</div>
-			</div>
-		</section>
-		</div>
-		</div>
-		<footer class="footer">
-			<p>Copyright&copy;2019&nbsp;&nbsp;&nbsp;&nbsp;ByHztian</p>
-		</footer>
+		<script src="js/dt.js"></script>
 		<script type="text/javascript">
-			var portfoliobar1 = document.getElementById('portfoliobar1')
-			var portfoliobar2 = document.getElementById('portfoliobar2')
-			var portfoliobar3 = document.getElementById('portfoliobar3')
-			var zp1 = document.getElementById('zp1')
-			var zp2 = document.getElementById('zp2')
-			var zp3 = document.getElementById('zp3')
-			var zp4 = document.getElementById('zp4')
-			
-			portfoliobar1.onclick = function(){
-				portfoliobar.className = 'menubar-1'
-				zp1.style.display = 'block'
-				zp2.style.display = 'block'
-				zp3.style.display = 'block'
-				zp4.style.display = 'block'
-			}
-			portfoliobar2.onclick = function(){
-				portfoliobar.className = 'menubar-2'
-				zp1.style.display = 'block'
-				zp2.style.display = 'none'
-				zp3.style.display = 'none'
-				zp4.style.display = 'block'
-			}
-			portfoliobar3.onclick = function(){
-				portfoliobar.className = 'menubar-3'
-				zp1.style.display = 'none'
-				zp2.style.display = 'block'
-				zp3.style.display = 'block'
-				zp4.style.display = 'none'
-			}
-			
+			$(document).ready(function() {
+				$("#zp1").fadeIn(3000);
+				$("#zp2").fadeIn(4000);
+				$("#zp3").fadeIn(5000);
+				$("#zp4").fadeIn(6000);
+				$("#portfoliobar1").click(function() {
+					document.getElementById('portfoliobar').className = 'menubar-1';
+					$("#zp1").fadeIn(3000);
+					$("#zp2").fadeIn(4000);
+					$("#zp3").fadeIn(5000);
+					$("#zp4").fadeIn(6000);
+				});
+				$("#portfoliobar2").click(function() {
+					document.getElementById('portfoliobar').className = 'menubar-2';
+					$("#zp2").hide();
+					$("#zp3").hide();
+					$("#zp1").fadeIn(3000);
+					$("#zp4").fadeIn(4000);
+				});
+				$("#portfoliobar3").click(function() {
+					document.getElementById('portfoliobar').className = 'menubar-3';
+					$("#zp1").hide();
+					$("#zp4").hide();
+					$("#zp2").fadeIn(3000);
+					$("#zp3").fadeIn(4000);
+
+				});
+			});
 		</script>
-		<script type="text/javascript" src="js/js-mobile.js" ></script>
+		<script type="text/javascript" src="js/js-mobile.js"></script>
 	</body>
 </html>
