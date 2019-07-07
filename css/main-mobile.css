@@ -221,6 +221,8 @@ font-size:26px;
 	border-bottom:1px dashed #DEDEDE ;
 	padding-top: .8rem;
 	padding-bottom: .8rem;
+	padding-left: .2rem;
+	padding-right: 0.2rem;
 	line-height: 2rem;
 	font-family: kaiti;
 	font-size: 18px;
@@ -369,4 +371,7 @@ section.portfolio .worksshow img{
 	text-align: left;
 	padding: .3rem;
 }
-
+.weixinimg{
+	top: 20%;
+	left: 5%;
+}
