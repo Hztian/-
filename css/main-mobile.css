@@ -234,6 +234,7 @@ section.skills{
 	margin-left: 5%;
 	margin-right: 5%;
 	margin-top: 3rem;
+	margin-bottom: 12rem;
 	height: 28rem;	
 }
 section.portfolio{
@@ -259,7 +260,7 @@ section.portfolio > h2{
 }
 section.skills > ol{
 	width: 90%;
-	height: 28rem;
+	height: 38rem;
 	background-color: white;
 	-webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
