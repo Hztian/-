@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- 指明字符编码，此编码必须是head的第一个直接元素（紧跟在head元素下） -->
+		<meta charset="utf-8">
+		<!-- IE兼容模式处理，以下代码表明优先使用最新版本IE和Chrome内核 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!-- 采用极速模式访问-->
+		<meta name="renderer" content="webkit">
+		<!-- SEO标签是必须的 -->
+		<meta name="baidu-site-verification" content="PWYOi9dGOW" />
+		<title>Hztian</title>
+		<meta name="author" content="作者黄镇添,1409278235@qq.com,广州从化">
+		<!-- 视图模式1：1，且禁止放大，缩小 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script> <!-- 让 IE 识别并支持 HTML5 元素。 -->
+		<!-- boostrap -->
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+		<!-- boostrap -->
+		<!-- 全局 -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- 响应式 -->
+		<link rel="stylesheet" type="text/css" href="css/style2.css">
+
+	</head>
+	<body>
+		<!-- 侧边栏  -->
+		<div id="mySidenav" class="sidenav">
+			<div class="side-header"><img src="img/touxiang.jpg">
+				<p>Hztian<br><a style="color: #E3E3E3; text-decoration: underline;" href="mailto:1409278235@qq.com">1409278235@qq.com</a></p>
+			</div>
+			<div class="side-nav-box">
+				<div class="side-box-menu">
+					<li><a href="index.html"><img src="font/zhuye.svg"><span>主页</span>
+						</a></li>
+
+					<li><a href="404.html"><img src="font/liuyanban.svg"><span>留言板</span>
+						</a></li>
+
+					<li><a href="404.html"><img src="font/zhaopian.svg"><span>照片</span>
+						</a></li>
+
+					<li><a href="404.html"><img src="font/yinyue.svg"><span>音乐</span>
+						</a></li>
+
+					<li><a href="https://hztian.github.io"><img src="font/boke.svg"><span>博客</span>
+						</a></li>
+
+					<li><a href="404.html"><img src="font/youqinglianjie.svg"><span>友情链接</span></a>
+					</li>
+					<div>
+						<span id="openbtn" class="openbtn" style="cursor:pointer">
+							<img src="font/openbtn.svg">
+						</span>
+						<span id="closebtn" class="closebtn" style="cursor:pointer">
+							<img src="font/closebtn.svg">
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 最大的容器-包装 -->
+		<div id="main" class="container hztian-wrapper">
+			<!-- 最大的容器 -->
+			<div class="row clearfix hztian-body">
+				<!-- 页头 -->
+				<div class="col-md-12 column hztian-header">
+					<div class="page-header into">
+						<h1>
+							Hztian <span id="asd" href="#modal-container-a" data-toggle="modal" style="text-decoration: underline; cursor: pointer;">http://me.hztian.me</span>
+							<script src="js/jquery.js"></script>
+							<script src="js/copy.js"></script>
+							<script>
+
+								var clipboard = new ClipboardJS('#asd', {
+       text: function() {
+        	var hztian = 'http://me.hztian.me';
+            return hztian;
+        }
+    });
+ 
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+ 
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    </script>
+						</h1>
+					</div>
+					<div class="hztiano-menu into">
+						<ul>
+							<li><a href="index.html"><img src="font/zhuye.svg"><span>主页</span>
+								</a></li>
+
+							<li><a href="404.html"><img src="font/liuyanban.svg"><span>留言板</span>
+								</a></li>
+
+							<li><a href="404.html"><img src="font/zhaopian.svg"><span>照片</span>
+								</a></li>
+
+							<li><a href="404.html"><img src="font/yinyue.svg"><span>音乐</span>
+								</a></li>
+
+							<li><a href="https://hztian.github.io"><img src="font/boke.svg"><span>博客</span>
+								</a></li>
+
+							<li><a href="404.html"><img src="font/youqinglianjie.svg"><span>友情链接</span></a>
+							</li>
+						</ul>
+						<hr>
+					</div>
+					<!-- 页头 -->
+					<div class="jumbotron hztian-header-box into">
+						<p>
+							<span class="greetings">
+							</span>
+							<br />
+							<span class="NowTime">
+							</span>
+						</p>
+						<!--问候语调用-->
+						<script>
+							now = new Date(),hour = now.getHours()
+						if(hour < 6){$(".greetings").append("晚上好吖，现在已经凌晨时间了，您需要多注意身体！")}
+						else if (hour < 8){$(".greetings").append("早上好吖，新的一天又开始了!“早起的鸟儿有虫吃，晚起的虫儿被鸟吃！")}
+						else if (hour < 12){$(".greetings").append("上午好吖，工作日的上午，您在工作吗？")}
+						else if (hour < 14){$(".greetings").append("中午好吖，中午下班时间到了，小伙伴记得去用餐,吃饱饱!")}
+						else if (hour < 18){$(".greetings").append("下午好吖，上了一天班，记得多休息一下!")}
+						else if (hour < 24){$(".greetings").append("晚上好吖，夜深了!早点休息，养成足够睡眠")}
+						// -->
+						</script>
+						<!--日期调用-->
+						<script>
+							var t = null;
+								t = setTimeout(time,1000);//开始执行
+								function time()
+								{
+									clearTimeout(t);//清除定时器
+									dt = new Date();
+									var y=dt.getYear()+1900;
+									var mm=dt.getMonth()+1;
+									var d=dt.getDate();
+									var weekday=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+									var day=dt.getDay();
+									var h=dt.getHours();
+									var m=dt.getMinutes();
+									var s=dt.getSeconds();
+									if(h<10){h="0"+h;}
+									if(m<10){m="0"+m;}
+									if(s<10){s="0"+s;}
+									$(".NowTime").html("现在的时间为："+y+"年"+mm+"月"+d+"日"+weekday[day]+""+h+":"+m+":"+s+"");
+									t = setTimeout(time,1000); //设定定时器，循环执行
+								}
+						</script>
+						<a class="btn btn-primary btn-large  hztian-part-box-btn" href="pdf/Hztian简历.pdf">打开PDF简历</a>
+					</div>
+					<!-- 关于 -->
+					<dl class="dl-horizontal hztian-header-about">
+						<div class="into"> <dt>
+								关于我
+							</dt>
+							<dd>
+								黄镇添，于1998年出生，2017年开始web前端开发，喜好钻研，爱折腾。
+							</dd>
+						</div>
+					</dl>
+				</div>	
+			</div>
+			<!-- 作品集 -->
+			<div class="row clearfix hztian-part">
+				<div class="alert alert-success alert-dismissable hztian-part-ties into">
+
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+					<h4>
+						这是我的个人作品
+					</h4>注：如果点击预览, 你将跳转到新的页面。<br>
+				</div>
+				<div class="col-md-4 column hztian-part-box into">
+					<h2>
+						商城PC端
+					</h2>
+					<img src="img/sc.PNG">
+					<p>
+						利用HTML5、CSS3、Jquery、js等各种技术,仿苏宁易购排版，只做了首页、登陆页和注册页，纯静态页面。<br /><br /><br />
+
+					</p>
+
+					<a target="_blank" href="http://sc.hztian.me"><button type="button" class="btn btn-default btn-primary hztian-part-box-btn">预览</button></a>
+
+				</div>
+
+				<div class="col-md-4 column hztian-part-box into">
+					<h2>
+						商城移动端
+					</h2><img src="img/scmobile.PNG">
+					<p>
+						利用HTML5、CSS3、Jquery、Jquery Mobile、js等各种技术,仿苏宁易购移动端排版,侧栏菜单、侧栏消息、商品详情、登陆注册。整体运用 rem 作单位，配合媒体查询，使页面图标和图片不会因为屏幕变大而失
+					</p>
+
+					<a target="_blank" href="http://scmobile.hztian.me"><button type="button" class="btn btn-default btn-primary hztian-part-box-btn">预览</button></a>
+				</div>
+
+				<div class="col-md-4 column hztian-part-box into">
+					<h2>
+						键盘导航
+					</h2><img src="img/keynav.PNG">
+					<p>
+						很粗糙的一个键盘导航,主要用到js,通过js生成键盘字母的标签,监听用户按键状态,打开对应的页面,还可以编辑对于键盘按钮的指向地址。
+					</p>
+					<a target="_blank" href="http://keynav.hztian.me"><button type="button" class="btn btn-default btn-primary hztian-part-box-btn">预览</button></a>
+				</div>
+
+				<div class="col-md-4 col-lg-pull-4 column hztian-part-box into">
+					<h2>
+						canvas简易画板
+					</h2><img src="img/canvas.png">
+					<p>
+						使用了HTML5 新增的用于绘制图像的canvas标签，通过监听鼠标的点击、移动、松开事件来画出你要画的东西。
+					</p>
+					<a target="_blank" href="http://canvas.hztian.me"><button type="button" class="btn btn-default btn-primary hztian-part-box-btn">预览</button></a>
+				</div>
+
+
+			</div>
+
+			<div class="row clearfix hztian-part-bottom">
+				<div class="col-md-12 column hztian-part-box-bottom into">
+					<address style="margin-bottom: 0px"> <strong>Copyright©2019 ByHztian</strong><br /> <abbr title="Phone">Phone:</abbr>
+						(+86)
+						13249716370
+						<br />
+						E-mail, 1409278235.com
+				</div>
+				</address>
+			</div>
+		</div>
+		<div class="modal fade" id="modal-container-a" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title" id="myModalLabel">
+							你好吖！
+						</h4>
+					</div>
+					<div class="modal-body">
+						<p>你已经复制了本站网址，赶紧分享给你的朋友们吧！</p>
+						<p>
+							如果你在本页面发现bug，希望你可以把bug告诉我哈哈哈哈。
+							意见邮箱:1409278235@qq.ccom</p>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
